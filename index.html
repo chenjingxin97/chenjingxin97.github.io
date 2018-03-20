@@ -150,7 +150,122 @@
 </header>
     <div class="article-content">
         
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本帖构思跌宕起伏，行文妙趣横生，无论读者是职场老手，还是校园新手；无论是字斟句酌，还是信手翻阅，都能跟着文字体会到……编不下去了，前言就到这，以下是详细教程，如为初学者大可按照步骤顺序执行操作，先动手，后理解。</p>
+</blockquote>
+<h2 id="配置Node-js"><a href="#配置Node-js" class="headerlink" title="配置Node.js"></a>配置Node.js</h2><blockquote>
+<p>根据你的个人电脑版本下载对应的安装包，如不确定，可直接选择 32-bit 版本。</p>
+<ul>
+<li>1 <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi" target="_blank" rel="noopener">windows install 32-bit</a></li>
+<li>2 <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank" rel="noopener">windows install 64-bit</a><br>安装过程如图所示，如无特殊要求，均可按照默认设置，点击“Next”进入下一步。<br><img src="http://ww3.sinaimg.cn/large/9fe4afa0gw1faljhotcr1j20dv0atq4u.jpg" alt=""><br>安装完成后，同时按住键盘”WIN”和“R”键，弹出窗口如图所示，输出“CMD”并确认。<br><img src="http://ww3.sinaimg.cn/large/9fe4afa0gw1faljikc6nbj20bh06l3z7.jpg" alt=""></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>上述命令执行后，将打开的命令行界面，依次输入：</p>
+</blockquote>
+<pre><code>node -v
+npm -v
+</code></pre><blockquote>
+<p>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程是否有步骤缺失<br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljiuibwdj20it0cb3zd.jpg" alt=""></p>
+</blockquote>
+<h2 id="配置Git环境"><a href="#配置Git环境" class="headerlink" title="配置Git环境"></a>配置Git环境</h2><blockquote>
+<p>下载Git安装文件：<br><a href="https://github-cloud.s3.amazonaws.com/releases/23216272/84b33b96-87f5-11e5-8f91-32080286239e.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161210%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20161210T033734Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=912c155bbe0fe970ca7b948f5f0d5e8c68c712b7fb8006062f53c8638c62c7b6&amp;X-Amz-SignedHeaders=host&amp;actor_id=14971673&amp;response-content-disposition=attachment%3B%20filename%3DGit-2.6.3-64-bit.exe&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="noopener">Git-2.6.3-64-bit.exe</a><br>然后进入Git的安装界面，如图：<br><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1fampzoik7ej20e70b1q5o.jpg" alt=""></p>
+</blockquote>
+<blockquote>
+<p>Git安装界面<br><img src="http://ww1.sinaimg.cn/large/9fe4afa0gw1faljmdsfd9j20dv0atq4u.jpg" alt=""></p>
+</blockquote>
+<blockquote>
+<p>和Node.js一样，大部分设置都只需要保持默认，但是出于我们操作方便考虑，建议PATH选项按照下图选择：</p>
+</blockquote>
+<blockquote>
+<p>Git PATH设置<br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljmop0mbj20dz0atwhi.jpg" alt=""></p>
+</blockquote>
+<blockquote>
+<p>我们来检查一下Git是不是安装正确了，打开命令行，输入：<br>                git –version  </p>
+</blockquote>
+<blockquote>
+<p>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要检查安装过程。<br><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1faljp87tpkj20it0cbdgo.jpg" alt=""></p>
+</blockquote>
+<h2 id="github账户的注册和配置"><a href="#github账户的注册和配置" class="headerlink" title="github账户的注册和配置"></a>github账户的注册和配置</h2><h3 id="第一步-Github注册"><a href="#第一步-Github注册" class="headerlink" title="第一步: Github注册"></a>第一步: Github注册</h3><blockquote>
+<p>打开<a href="https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。" target="_blank" rel="noopener">https://github.com/，在下图的框中，分别输入自己的用户名，邮箱，密码。</a><br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljxemku5j20bo0as0tv.jpg" alt=""></p>
+</blockquote>
+<blockquote>
+<p>然后前往自己刚才填写的邮箱，点开Github发送给你的注册确认信，确认注册，结束注册流程。一定要确认注册，否则无法使用gh-pages！</p>
+</blockquote>
+<h3 id="第二步-创建代码库"><a href="#第二步-创建代码库" class="headerlink" title="第二步: 创建代码库"></a>第二步: 创建代码库</h3><blockquote>
+<p>登陆之后，点击页面右上角的加号，选择New repository：<br><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1faljww56v8j20ci0a975c.jpg" alt="">  </p>
+</blockquote>
+<blockquote>
+<p>准备新建代码库，进入代码库创建页面：<br>在Repository name下填写yourname.github.io，(注：此处yourname为待定，可根据下例操作）在Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：<br>例如：我的github名称是chenjingxin97,这里我就会填 chenjingxin97.github.io,如果你的名字是xujun，那你就填 xujun.github.io<br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljv7hoqhj20p40fz0vo.jpg" alt=""></p>
+</blockquote>
+<h3 id="第三步-代码库设置"><a href="#第三步-代码库设置" class="headerlink" title="第三步: . 代码库设置"></a>第三步: . 代码库设置</h3><blockquote>
+<p>正确创建之后，你将会看到如下界面:<br><img src="http://ww1.sinaimg.cn/large/9fe4afa0gw1falk4end8ij20kg0cbtbl.jpg" alt=""><br>  <br></p>
+</blockquote>
+<blockquote>
+<p>接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：<br><img src="http://ww3.sinaimg.cn/large/9fe4afa0gw1falk1s5xq7j20q204kq3o.jpg" alt=""><br><br>Github pages<br><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1falk2bef2zj20di0423yw.jpg" alt=""><br>点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。 如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了~ 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p>
+</blockquote>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><blockquote>
+<p>在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录<br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1falkb6ao3oj2064032a9x.jpg" alt=""><br>在命令行中输入：</p>
+<ul>
+<li>此处疑问<br>如果你看到了如图文字，则说明已经安装成功了。</li>
+</ul>
+</blockquote>
+<h3 id="hexo的相关配置"><a href="#hexo的相关配置" class="headerlink" title="hexo的相关配置"></a>hexo的相关配置</h3><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><blockquote>
+<p>接着上面的操作，输入：</p>
+<ul>
+<li>hexo init</li>
+<li>npm install<br>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</li>
+</ul>
+</blockquote>
+<h3 id="首次体验Hexo"><a href="#首次体验Hexo" class="headerlink" title="首次体验Hexo"></a>首次体验Hexo</h3><ul>
+<li>hexo g<br>![]<a href="http://ww3.sinaimg.cn/large/9fe4afa0gw1falkiaws1xj208p045t9j.jpg" target="_blank" rel="noopener">http://ww3.sinaimg.cn/large/9fe4afa0gw1falkiaws1xj208p045t9j.jpg</a>)</li>
+<li>hexo s<blockquote>
+<p>然后会提示：</p>
+</blockquote>
+</li>
+<li>INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1falkk5mnsvj211y0lcten.jpg" alt=""><blockquote>
+<p>到目前为止，Hexo在本地的配置已经全都结束了。</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>下面会讲解怎样将Hexo与github page 联系起来<br>大概分为以下几步</p>
+<ul>
+<li>配置git个人信息</li>
+<li>配置Deployment</li>
+</ul>
+</blockquote>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><blockquote>
+<p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到<br>1、设置Git的user name和email：(如果是第一次的话)</p>
+<ul>
+<li>git config –global user.name “xujun”</li>
+<li>git config –global user.email “<a href="mailto:gdutxiaoxu@163.com" target="_blank" rel="noopener">gdutxiaoxu@163.com</a>“<br>2、生成密钥</li>
+<li>ssh-keygen -t rsa -C “<a href="mailto:gdutxiaoxu@163.com" target="_blank" rel="noopener">gdutxiaoxu@163.com</a>“</li>
+</ul>
+</blockquote>
+<h3 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h3><blockquote>
+<p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：</p>
+<ul>
+<li>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yourname/yourname.github.io.git<br>  branch: master</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>比如我的仓库的地址是<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:gdutxiaoxu/gdutxiaoxu.github.io.git，所以配置如下</p>
+<ul>
+<li>deploy:<br>type: git<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:gdutxiaoxu/gdutxiaoxu.github.io.git<br>branch: master</li>
+</ul>
+</blockquote>
+<h2 id="写博客、发布文章"><a href="#写博客、发布文章" class="headerlink" title="写博客、发布文章"></a>写博客、发布文章</h2><blockquote>
+<p>新建一篇博客，执行下面的命令：</p>
+<ul>
+<li>hexo new post “article title”<br><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1fan5dd0480j20cb04ndg2.jpg" alt=""><br>这时候在我的 电脑的目录下 F:\hexo\source\ _posts 将会看到 article title.md 文件<br>注意需要提前安装一个扩展：</li>
+<li>npm install hexo-deployer-git –save<br>用MarDown编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令：</li>
+<li>hexo g   // 生成</li>
+<li>hexo d   // 部署<br>当然你也可以执行下面的命令，相当于上面两条命令的效果</li>
+<li>hexo d -g #在部署前先生成<br><img src="http://ww1.sinaimg.cn/large/9fe4afa0gw1fan5ibq44wj20ew04pwf7.jpg" alt=""><br>部署成功后访问 你的地址，<a href="https://yourName.github.io（这里输入我的地址：" target="_blank" rel="noopener">https://yourName.github.io（这里输入我的地址：</a> <a href="https://gdutxiao.github.io" target="_blank" rel="noopener">https://gdutxiao.github.io</a> ),将可以看到生成的文章。</li>
+</ul>
+</blockquote>
+
         
         
         <p class="article-more-link">
